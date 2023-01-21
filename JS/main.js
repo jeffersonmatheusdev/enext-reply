@@ -85,7 +85,7 @@ let data = {
 const constructor = (image, potion_name, potion_value) => {
     return `
     <div class="card">
-        <img src="./assets/${image}">
+        <img src="./assets/products/${image}">
         <div class="describ">
             <a><strong>${potion_name}</strong></a>
             <a>-</a>
