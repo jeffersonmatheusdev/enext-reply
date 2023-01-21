@@ -1,0 +1,275 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --red-text: #d73a1e;
+    --purple-text: #6c537f;
+    --gray-text: #666666;
+    --purple-menu: #523468;
+    --li-selected: #422a53;
+    --cream-background: #e6e6e6;
+    --btn-orange: #d73a1e;
+    --orange-text: #d73a2a;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo > a {
+    color: var(--red-text);
+    font-size: 1.5rem;
+}
+
+.logo > span {
+    color: var(--purple-text);
+    font-style: italic;
+    position: relative;
+    text-align: center;
+}
+
+.logo > span::before,
+.logo > span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+}
+
+.logo > span::before {
+    left: -2px;
+}
+
+.logo > span::after {
+    right: -5px;
+}
+
+.search {
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+}
+
+.search > input {
+    outline: none;
+}
+
+.fa-magnifying-glass {
+    color: var(--red-text);
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.message > a, .message > span {
+    color: var(--red-text);
+}
+
+.message > a {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.message > span {
+    font-weight: 200;
+}
+
+.bag {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+}
+
+.bag > div {
+    display: flex;
+}
+
+.bag > img {
+    height: 100%;
+    position: relative;
+    padding-right: 30px;
+}
+
+.bag > div > span {
+    color: var(--gray-text);
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.bag > div > a {
+    color: var(--red-text);
+    padding-left: 5px;
+    position: relative;
+}
+
+nav {
+    margin-top: 30px;
+    background-color: var(--purple-menu);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav > section > ul {
+    display: flex;
+    width: 450px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > section > ul > li {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.fa-caret-down {
+    padding-left: 4px;
+}
+
+.li_selected {
+    background-color: var(--li-selected);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+nav > div > a {
+  color: white; 
+  font-weight: 200;
+}
+
+nav > div {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+nav > div > span {
+    color: rgba(255, 255, 255, 0.2)    
+}
+
+main {
+    justify-content: center;
+}
+main > h3 {
+    padding: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+}
+
+.card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.describ > a {
+    font-size: 0.8rem;
+}
+
+.describ > span {
+    font-size: 0.8rem;
+    color: var(--red-text);
+}
+
+.card {
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 100px;
+}
+
+footer {
+    background-color: var(--cream-background);
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-left  {
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 3em;
+}
+
+.footer-left > div > input { 
+    outline: none;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;    
+}
+
+.footer-left > div > input::placeholder {
+    padding-left: 10px;
+}
+
+.footer-left > div > button {
+    color: white;
+    background-color: var(--btn-orange);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.pages-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    color: var(--orange-text);
+    font-size: 1rem;
+}
+
+.desc {
+    color: var(--gray-text);
+    padding-top: 40px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.social > i {
+    color: var(--purple-menu);
+}
